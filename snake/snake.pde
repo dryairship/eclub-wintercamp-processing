@@ -44,6 +44,10 @@ void draw() {
     fx = (int)random(100, 900);
     fy = (int)random(100, 900);
   }
+  if(px>980 || px<20 || py<20 || py>980){
+    text("GAME OVER", 500,500);
+     noLoop(); 
+  }
   ellipse(fx, fy, 15, 15);
   snake[0][0]+=vx; 
   snake[0][1]+=vy; 
@@ -60,9 +64,7 @@ void draw() {
     if (del>0)   delay(del);
   }
   text("Score : "+score, 10, 10);
-  if(px>990 || px<10 || py<10 || py>990){
-     noLoop(); 
-  }
+  
 }
 
 void keyPressed() {
