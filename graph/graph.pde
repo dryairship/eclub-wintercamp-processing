@@ -17,11 +17,12 @@ void draw(){
 }
 
 int f(int x){
-  return (int)(10*Math.sqrt(1000-(x*x/100f)));
+  return (int)(100*sin(x*cos(x/31.4f)));
+  //return (int)(10*Math.sqrt(1000-(x*x/100f)));
   //return (int)(100*tan(x/100f));
   //return (x*x*x)/10000 -(3*x*x/100) + x;
   //return  (int)Math.sqrt(100*x);
-  //return x*x/100;
+  ////return x*x/100;
   //return (int)(100*cos(x/10f));
   //return (int)(100*sin(x/10f));
 }
